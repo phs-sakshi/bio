@@ -19,7 +19,6 @@ export default function Navigation() {
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <h1 className="text-xl font-semibold text-[hsl(var(--bu-blue))]">Sakshi Sharma</h1>
-            <span className="text-sm text-[hsl(var(--academic-gray))]">PhD Student</span>
           </div>
           
           <div className="hidden md:flex space-x-8">
