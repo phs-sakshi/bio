@@ -42,24 +42,6 @@ export default function ResearchSection() {
           </Card>
         ))}
       </div>
-
-      <div className="bg-slate-100 p-8 rounded-lg">
-        <h3 className="text-2xl font-semibold text-slate-900 mb-6 font-[Crimson_Text]">Research Vision</h3>
-        <div className="prose prose-slate max-w-none">
-          <p className="text-slate-700 leading-relaxed mb-4">
-            My research vision centers on democratizing high-performance computing by making distributed systems 
-            more accessible, efficient, and reliable. I believe that the future of computing lies in 
-            disaggregated architectures that can dynamically adapt to changing workloads while maintaining 
-            strong consistency and fault tolerance guarantees.
-          </p>
-          <p className="text-slate-700 leading-relaxed">
-            Through my work, I aim to bridge the gap between theoretical distributed systems research and 
-            practical implementations that can scale to meet the demands of modern data-intensive applications. 
-            This involves developing novel algorithms, optimizing existing systems, and creating new paradigms 
-            for distributed computation that prioritize both performance and reliability.
-          </p>
-        </div>
-      </div>
     </section>
   );
 }

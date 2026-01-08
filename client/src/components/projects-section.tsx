@@ -8,8 +8,8 @@ export default function ProjectsSection() {
       title: "Disaggregated Stream Processing System",
       subtitle: "PhD Research • Boston University • 2025-Present",
       description: "Developing a fully-disaggregated design for data stream processing systems that decouples core data-plane and control-plane services, enabling nonblocking online reconfiguration without pausing computation. This research addresses fundamental challenges in modern stream processing architectures.",
-      tags: ["Distributed Systems", "Stream Processing", "System Architecture"],
-      advisors: "Dr. Vasiliki Kalavri, Dr. John Liagouris",
+      tags: ["Distributed Systems", "Stream Processing"],
+      advisors: "Vasiliki(Vasia) Kalavri, John Liagouris",
       gradient: "from-[hsl(var(--bu-blue))] to-slate-600",
       current: true
     },
@@ -18,15 +18,15 @@ export default function ProjectsSection() {
       subtitle: "Masters Thesis • Boston University • 2024",
       description: "Developed a dynamic parameter optimization framework for LSM-based databases in C++, focusing on identifying essential parameters and dynamically tuning them based on workload variations to achieve significant performance improvements.",
       tags: ["Database Systems", "Performance Optimization", "C++"],
-      link: "#",
+      advisors: "Manos Athanassoulis",
       gradient: "from-slate-600 to-slate-800"
     },
     {
       title: "Cloud Bursting in Apache Flink",
       subtitle: "Course Project • Boston University",
       description: "Developed an adaptive Flink application in Java to leverage cloud bursting techniques as an alternative to back-pressure, addressing transient workload spikes in distributed stream processing environments.",
-      tags: ["Apache Flink", "Cloud Computing", "Java"],
-      link: "#",
+      tags: ["Apache Flink", "Cloud Computing"],
+      advisors: "Vasiliki(Vasia) Kalavri",
       gradient: "from-green-600 to-blue-600"
     },
     {
@@ -34,7 +34,7 @@ export default function ProjectsSection() {
       subtitle: "Course Project • Boston University",
       description: "Enhanced the Raft consensus algorithm to tolerate partial network failures by incorporating ballot leader election and quorum connectivity features, implemented in Go for improved fault tolerance in distributed systems.",
       tags: ["Consensus Algorithms", "Fault Tolerance", "Go"],
-      link: "#",
+      advisors: "John Liagouris",
       gradient: "from-purple-600 to-indigo-600"
     }
   ];
@@ -61,8 +61,7 @@ export default function ProjectsSection() {
                 {project.tags.map((tag, tagIndex) => (
                   <Badge 
                     key={tagIndex} 
-                    variant={tagIndex === 0 ? "default" : "secondary"}
-                    className={tagIndex === 0 ? "bg-[hsl(var(--bu-blue))] hover:bg-blue-800" : ""}
+                    variant="secondary"
                   >
                     {tag}
                   </Badge>
@@ -75,7 +74,7 @@ export default function ProjectsSection() {
                     <span>Advisors: {project.advisors}</span>
                   </div>
                 )}
-                {project.link && (
+                {/* {project.link && (
                   <div className="flex gap-4">
                     <a 
                       href={project.link} 
@@ -85,7 +84,7 @@ export default function ProjectsSection() {
                       View Code
                     </a>
                   </div>
-                )}
+                )} */}
               </div>
             </CardContent>
           </Card>

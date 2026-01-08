@@ -25,9 +25,9 @@
   --destructive-foreground: hsl(210, 40%, 98%);
   --ring: hsl(222, 84%, 4.9%);
   --radius: 0.5rem;
-  --bu-blue: hsl(221, 83%, 53%);
-  --bu-red: hsl(0, 84%, 60%);
-  --academic-gray: hsl(215, 16%, 46.9%);
+  --bu-blue: 221 83% 53%;
+  --bu-red: 0 84% 60%;
+  --academic-gray: 215 16% 46.9%;
 }
 
 .dark {
@@ -50,9 +50,9 @@
   --destructive: hsl(0, 62%, 30%);
   --destructive-foreground: hsl(210, 40%, 98%);
   --ring: hsl(212, 92%, 65%);
-  --bu-blue: hsl(221, 83%, 53%);
-  --bu-red: hsl(0, 84%, 60%);
-  --academic-gray: hsl(215, 20%, 65%);
+  --bu-blue: 221 83% 53%;
+  --bu-red: 0 84% 60%;
+  --academic-gray: 215 20% 65%;
 }
 
 @layer base {

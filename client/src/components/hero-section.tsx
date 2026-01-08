@@ -1,6 +1,8 @@
 import { User, Download, Github, Linkedin, GraduationCap, University, FlaskConical, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import profileImg from "@assets/sakshi_profile.jpeg";
+import resumePdf from "@assets/resume.pdf";
 
 export default function HeroSection() {
   return (
@@ -10,27 +12,22 @@ export default function HeroSection() {
           <h1 className="text-4xl font-bold text-slate-900 mb-4 font-[Crimson_Text]">About Me</h1>
           <div className="prose prose-slate max-w-none">
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              I am a PhD student at Boston University, working under the supervision of 
-              <a href="#" className="text-[hsl(var(--bu-blue))] hover:underline ml-1 mr-1">Dr. Vasiliki (Vasia) Kalavri</a> 
-              and <a href="#" className="text-[hsl(var(--bu-blue))] hover:underline ml-1">Dr. John Liagouris</a> 
-              in the Complex Analytics and Scalable Processing Systems Lab (CASP).
+              I am a PhD student at Boston University, working under the supervision of <a href="https://cs-people.bu.edu/vkalavri/" className="text-[hsl(var(--bu-blue))] hover:text-blue-800 font-medium">Vasiliki(Vasia) Kalavri</a> and <a href="https://cs-people.bu.edu/liagos/" className="text-[hsl(var(--bu-blue))] hover:text-blue-800 font-medium">John Liagouris</a> in the Complex Analytics and Scalable Processing Systems Lab (CASP).
             </p>
             <p className="text-slate-600 leading-relaxed mb-6">
-              My research focuses on distributed systems and stream processing, with particular emphasis on 
-              building efficient, disaggregated architectures for heterogeneous computing environments. 
-              Before starting my PhD, I completed my Master's in Computer Science at Boston University 
-              with a CGPA of 3.9/4, and my Bachelor's in Computer Science Engineering from IIIT Bhubaneswar, India.
+              My research focuses on distributed systems and stream processing, to build 
+              build efficient, disaggregated architectures for heterogeneous computing environments. 
+              Before starting my PhD, I completed my Master's in Computer Science at Boston University,
+               and my Bachelor's in Computer Science Engineering from IIIT Bhubaneswar, India.
             </p>
-            <p className="text-slate-600 leading-relaxed">
-              Throughout my academic journey, I've had the opportunity to work on cutting-edge research in 
-              streaming systems, advanced databases, and distributed computing, contributing to both 
-              academic publications and practical implementations that address real-world challenges.
-            </p>
+            
           </div>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button className="bg-[hsl(var(--bu-blue))] hover:bg-blue-800 text-white">
-              <Download className="mr-2 h-4 w-4" />
-              Download CV
+            <Button asChild className="bg-[hsl(var(--bu-blue))] hover:bg-blue-800 text-white">
+              <a href={resumePdf} download="Sakshi_Sharma_CV.pdf" target="_blank" rel="noopener noreferrer">
+                <Download className="mr-2 h-4 w-4" />
+                Download CV
+              </a>
             </Button>
             <Button variant="outline" asChild>
               <a href="https://github.com/phs-sakshi" target="_blank" rel="noopener noreferrer">
@@ -47,8 +44,12 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="space-y-6">
-          <div className="w-full h-64 bg-slate-200 rounded-lg flex items-center justify-center text-slate-500">
-            <User className="h-24 w-24" />
+          <div className="w-full h-64 bg-slate-200 rounded-lg overflow-hidden flex items-center justify-center">
+            <img
+              src={profileImg}
+              alt="Profile picture"
+              className="w-full h-full object-cover"
+            />
           </div>
           <Card>
             <CardContent className="pt-6">
@@ -68,7 +69,7 @@ export default function HeroSection() {
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 text-[hsl(var(--academic-gray))] mr-3" />
-                  <span>phs.sakshi@gmail.com</span>
+                  <span>phsakshi at bu dot edu</span>
                 </div>
               </div>
             </CardContent>

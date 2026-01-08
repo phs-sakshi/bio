@@ -17,12 +17,7 @@ export default function ContactSection() {
       <div className="grid md:grid-cols-2 gap-8">
         <div className="space-y-6">
           <div className="prose prose-slate">
-            <p className="text-slate-700 leading-relaxed">
-              I'm always excited to discuss research opportunities, potential collaborations, or 
-              simply chat about distributed systems and database technologies. Whether you're a 
-              fellow researcher, industry professional, or student interested in these areas, 
-              I'd love to hear from you.
-            </p>
+
           </div>
           
           <div className="space-y-4">
@@ -32,8 +27,8 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="font-medium text-slate-900">Email</p>
-                <a href="mailto:phs.sakshi@gmail.com" className="text-[hsl(var(--bu-blue))] hover:underline">
-                  phs.sakshi@gmail.com
+                <a className="text-[hsl(var(--bu-blue))] hover:underline">
+                  phsakshi at bu dot edu
                 </a>
               </div>
             </div>
@@ -84,15 +79,6 @@ export default function ContactSection() {
               </div>
             ))}
           </div>
-          
-          <Card className="mt-8 bg-white border border-slate-200">
-            <CardContent className="p-4">
-              <p className="text-sm text-slate-600 italic">
-                "I believe in building systems that not only perform well but also democratize 
-                access to high-performance computing resources."
-              </p>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>

@@ -32,7 +32,7 @@ export default function PublicationsSection() {
             </div>
             <div className="flex flex-wrap gap-3">
               <a 
-                href="#" 
+                href="https://ieeexplore.ieee.org/document/9347715" 
                 className="inline-flex items-center text-[hsl(var(--bu-blue))] hover:text-blue-800 text-sm font-medium"
               >
                 <ExternalLink className="mr-2 h-4 w-4" />
@@ -47,15 +47,6 @@ export default function PublicationsSection() {
           </CardContent>
         </Card>
       </div>
-      
-      <Card className="mt-8 bg-slate-50 border border-slate-200">
-        <CardContent className="p-6">
-          <p className="text-slate-600 text-center">
-            <Zap className="inline mr-2 h-4 w-4" />
-            Additional publications from ongoing PhD research will be added as they become available.
-          </p>
-        </CardContent>
-      </Card>
     </section>
   );
 }
