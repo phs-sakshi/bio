@@ -12,7 +12,9 @@ export default function HeroSection() {
           <h1 className="text-4xl font-bold text-slate-900 mb-4 font-[Crimson_Text]">About Me</h1>
           <div className="prose prose-slate max-w-none">
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              I am a PhD student at Boston University, working under the supervision of <a href="https://cs-people.bu.edu/vkalavri/" className="text-[hsl(var(--bu-blue))] hover:text-blue-800 font-medium">Vasiliki(Vasia) Kalavri</a> and <a href="https://cs-people.bu.edu/liagos/" className="text-[hsl(var(--bu-blue))] hover:text-blue-800 font-medium">John Liagouris</a> in the Complex Analytics and Scalable Processing Systems Lab (CASP).
+              I am a PhD student at Boston University, working under the supervision of <a href="https://cs-people.bu.edu/vkalavri/" className="text-[hsl(var(--bu-blue))] hover:text-blue-800 font-medium">Vasiliki(Vasia) Kalavri</a> and
+              <a href="https://cs-people.bu.edu/liagos/" className="text-[hsl(var(--bu-blue))] hover:text-blue-800 font-medium">John Liagouris</a>
+              in the <a href="https://sites.bu.edu/casp/" className="text-[hsl(var(--bu-blue))] hover:text-blue-800 font-medium">Complex Analytics and Scalable Processing Systems Lab (CASP)</a>.
             </p>
             <p className="text-slate-600 leading-relaxed mb-6">
               My research focuses on distributed systems and stream processing, to build 
