@@ -47,6 +47,54 @@ export default function PublicationsSection() {
           </CardContent>
         </Card>
       </div>
+      <div className="space-y-6">
+        <Card className="bg-white shadow-sm border border-slate-200">
+          <CardContent className="p-8">
+            <div className="flex items-start justify-between mb-4">
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                  Koala: Non-disruptive Reconfiguration for Long-running Stateful Dataflows
+                </h3>
+                <p className="text-slate-600 text-sm mb-3">
+                  <span className="font-medium">Accepted publication USENIX NSDI’27</span>
+                  {/*•DOI:*/}
+                </p>
+                <p className="text-slate-600 leading-relaxed mb-4">
+                  <span className="font-medium">Authors:</span> L. Huang,
+                  <span className="font-semibold text-slate-900"> S. Sharma</span>,
+                  C. Yu, Z. Wang, Y. Wang, Z. Zhu, J. Liagouris, V. Kalavri
+                </p>
+                <p className="text-slate-700 leading-relaxed">
+                  This work presents Koala Koala, a reconfiguration protocol for distributed dataflow systems that
+                  retains the operational performance of embedded-state architectures while matching the disruption-free adaptability of
+                  external-state designs.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {/*<a*/}
+              {/*    href="https://ieeexplore.ieee.org/document/9347715"*/}
+              {/*    className="inline-flex items-center text-[hsl(var(--bu-blue))] hover:text-blue-800 text-sm font-medium"*/}
+              {/*>*/}
+              {/*  <ExternalLink className="mr-2 h-4 w-4" />*/}
+              {/*  View Publication*/}
+              {/*</a>*/}
+              <a
+                  href="https://github.com/CASP-Systems-BU/koala"
+                  className="inline-flex items-center text-[hsl(var(--bu-blue))] hover:text-blue-800 text-sm font-medium"
+              >
+                <ExternalLink className="mr-2 h-4 w-4" />
+                View Code
+              </a>
+              <span className="inline-flex items-center text-slate-500 text-sm">
+                <Calendar className="mr-2 h-4 w-4" />
+                2026
+              </span>
+              <Badge variant="secondary">Distributed Dataflow systems</Badge>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
     </section>
   );
 }
