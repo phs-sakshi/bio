@@ -14,11 +14,11 @@ export default function HeroSection() {
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               I am a PhD student at Boston University, working under the supervision of <a href="https://cs-people.bu.edu/vkalavri/" className="text-[hsl(var(--bu-blue))] hover:text-blue-800 font-medium">Vasiliki(Vasia) Kalavri</a> and
               <a href="https://cs-people.bu.edu/liagos/" className="text-[hsl(var(--bu-blue))] hover:text-blue-800 font-medium">John Liagouris</a>
-              in the <a href="https://sites.bu.edu/casp/" className="text-[hsl(var(--bu-blue))] hover:text-blue-800 font-medium">Complex Analytics and Scalable Processing Systems Lab (CASP)</a>.
+               in the <a href="https://sites.bu.edu/casp/" className="text-[hsl(var(--bu-blue))] hover:text-blue-800 font-medium">Complex Analytics and Scalable Processing Systems Lab (CASP)</a>.
             </p>
             <p className="text-slate-600 leading-relaxed mb-6">
               My research focuses on distributed systems and stream processing, to build 
-              build efficient, disaggregated architectures for heterogeneous computing environments. 
+              efficient, disaggregated architectures for heterogeneous computing environments.
               Before starting my PhD, I completed my Master's in Computer Science at Boston University,
                and my Bachelor's in Computer Science Engineering from IIIT Bhubaneswar, India.
             </p>
