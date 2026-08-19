@@ -36,28 +36,28 @@ export default function ExperienceSection() {
     <section className="mb-16">
       <h2 className="text-3xl font-bold text-slate-900 mb-8 font-[Crimson_Text]">Experience</h2>
       
-      <div className="space-y-8">
+      <div className="space-y-4">
         {experiences.map((experience, index) => (
-          <div key={index} className="flex gap-6">
-            <div className={`flex-shrink-0 w-16 h-16 ${experience.color} rounded-full flex items-center justify-center`}>
-              <experience.icon className="h-6 w-6 text-white" />
-            </div>
-            <div className="flex-1">
-              <Card className="bg-white shadow-sm border border-slate-200">
-                <CardContent className="p-6">
-                  <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
+          <Card key={index} className="bg-white shadow-sm border border-slate-200">
+            <CardContent className="p-6">
+              <div className="flex gap-4">
+                <div className={`flex-shrink-0 w-12 h-12 ${experience.color} rounded-full flex items-center justify-center`}>
+                  <experience.icon className="h-5 w-5 text-white" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1 mb-3">
                     <div>
                       <h3 className="text-lg font-semibold text-slate-900">{experience.title}</h3>
                       <p className="text-[hsl(var(--bu-blue))] font-medium">{experience.company}</p>
                       <p className="text-sm text-[hsl(var(--academic-gray))]">{experience.location}</p>
                     </div>
-                    <span className="text-sm text-[hsl(var(--academic-gray))] mt-1 md:mt-0">{experience.period}</span>
+                    <span className="text-sm text-[hsl(var(--academic-gray))] md:mt-1">{experience.period}</span>
                   </div>
                   <p className="text-slate-700 leading-relaxed">{experience.description}</p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         ))}
       </div>
     </section>
