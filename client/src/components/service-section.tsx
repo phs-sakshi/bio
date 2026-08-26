@@ -5,8 +5,8 @@ export default function ServiceSection() {
   const serviceItems = [
     {
       role: "Artifact Evaluation Committee",
-      venue: "EuroSys (Spring)",
-      year: "2027",
+      venue: "European Conference on Computer Systems (EuroSys)",
+      year: "Spring 2027",
     },
       {
         role: "Artifact Evaluation Committee",
