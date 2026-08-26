@@ -8,6 +8,11 @@ export default function ServiceSection() {
       venue: "EuroSys (Spring)",
       year: "2027",
     },
+      {
+        role: "Artifact Evaluation Committee",
+        venue: "ACM SIGOPS Annual Technical Conference (ATC)",
+        year: "2026",
+      },
   ];
 
   return (
