@@ -8,7 +8,7 @@ export default function ExperienceSection() {
       company: "Institute for Global Sustainability",
       location: "Boston, MA",
       period: "May 2023 - May 2024",
-      description: "Designed a scalable MongoDB database for the Corporate Carbon Risk project and deployed FlaskConical APIs on Amazon EC2 to automate real-time data collection, enhancing scalability.",
+      description: "Designed a scalable MongoDB database for the Corporate Carbon Risk project and deployed Flask Conical APIs on Amazon EC2 to automate real-time data collection, enhancing scalability.",
       icon: Briefcase,
       color: "bg-[hsl(var(--bu-blue))]"
     },

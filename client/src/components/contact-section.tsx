@@ -27,9 +27,9 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="font-medium text-slate-900">Email</p>
-                <a className="text-[hsl(var(--bu-blue))] hover:underline">
+                <span className="text-[hsl(var(--bu-blue))]">
                   phsakshi at bu dot edu
-                </a>
+                </span>
               </div>
             </div>
             

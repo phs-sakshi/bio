@@ -9,7 +9,7 @@ export default function ProjectsSection() {
       subtitle: "PhD Research • Boston University • 2025-Present",
       description: "Developing a fully-disaggregated design for data stream processing systems that decouples core data-plane and control-plane services, enabling nonblocking online reconfiguration without pausing computation. This research addresses fundamental challenges in modern stream processing architectures.",
       tags: ["Distributed Systems", "Stream Processing"],
-      advisors: "Vasiliki(Vasia) Kalavri, John Liagouris",
+      advisors: "Vasiliki (Vasia) Kalavri, John Liagouris",
       gradient: "from-[hsl(var(--bu-blue))] to-slate-600",
       current: true
     },
@@ -26,7 +26,7 @@ export default function ProjectsSection() {
       subtitle: "Course Project • Boston University",
       description: "Developed an adaptive Flink application in Java to leverage cloud bursting techniques as an alternative to back-pressure, addressing transient workload spikes in distributed stream processing environments.",
       tags: ["Apache Flink", "Cloud Computing"],
-      advisors: "Vasiliki(Vasia) Kalavri",
+      advisors: "Vasiliki (Vasia) Kalavri",
       gradient: "from-green-600 to-blue-600"
     },
     {
@@ -46,9 +46,9 @@ export default function ProjectsSection() {
       <div className="grid gap-8">
         {projects.map((project, index) => (
           <Card key={index} className="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
-            <div className={`h-48 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
+            <div className={`bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
               <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-              <div className="absolute bottom-4 left-6 text-white">
+              <div className="relative px-6 py-5 text-white">
                 <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
                 <p className="text-slate-200 text-sm">{project.subtitle}</p>
               </div>

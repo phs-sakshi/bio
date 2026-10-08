@@ -67,4 +67,9 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Crimson Text', serif;
   }
+
+  /* Keep section headings clear of the sticky header when scrolled to */
+  section {
+    scroll-margin-top: 5rem;
+  }
 }
