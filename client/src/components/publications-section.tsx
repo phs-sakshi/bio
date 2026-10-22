@@ -46,6 +46,13 @@ export default function PublicationsSection() {
                 <ExternalLink className="mr-2 h-4 w-4" />
                 View Code
               </a>
+              <a
+                  href="https://arxiv.org/abs/2610.28939"
+                  className="inline-flex items-center text-[hsl(var(--bu-blue))] hover:text-blue-800 text-sm font-medium"
+              >
+                <ExternalLink className="mr-2 h-4 w-4" />
+                View Publication
+              </a>
               <span className="inline-flex items-center text-slate-500 text-sm">
                 <Calendar className="mr-2 h-4 w-4" />
                 2026
